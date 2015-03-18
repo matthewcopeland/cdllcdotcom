@@ -1,5 +1,5 @@
 @function image-path($img) {
-  @return "/images/#{$img}";
+  @return "../../images/#{$img}";
 }
 
 @mixin clearfix( $pseudo:"after" ) {
