@@ -1,0 +1,16 @@
+body { margin: 0 auto; }
+
+
+#container { padding: 0 $gutter; }
+
+
+#content {
+  padding: $gutter 0;
+  border-bottom: $bevel-dark-border;
+}
+
+
+fieldset { margin-bottom: $gutter; }
+
+
+p { margin-bottom: $gutter/2; }

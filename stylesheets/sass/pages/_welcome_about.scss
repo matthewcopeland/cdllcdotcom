@@ -1,0 +1,35 @@
+.welcome-about {
+
+  #content {
+    text-align: center;
+  }
+
+  article {
+    display: inline-block;
+    text-align: left;
+    @include clearfix;
+  }
+
+  aside, p {
+    float: left;
+    margin-bottom: $gutter;
+  }
+
+  p {
+    max-width: 28em;
+    padding: 0 $gutter;
+  }
+
+  aside img {
+    max-width: 300px;
+    box-shadow: 0 1px 3px 0 rgba(black, 0.6);
+  }
+}
+
+
+@media only screen and (max-width: 767px ) {
+  .welcome-about {
+    aside, p { float: none; }
+    p { padding: 0; }
+  }
+}

@@ -1,0 +1,98 @@
+// sangy dark
+
+// global variables
+$border-radius: 3px;
+$gutter: 20px;
+$touch-size: 48px;
+
+// Colors
+$off-white: #fefefe;
+
+$grey01: #333;
+$grey02: #666;
+$grey03: #999;
+$grey04: #aaa;
+$grey05: #ccc;
+
+$greyblue: #5C6F7B;
+
+$lightgreen: #B1BA1D;
+$darkgreen: #8D8A00;
+
+$lightblue: #29AAE2;
+$darkblue: #006FAB;
+
+$maroon: #AD1D41;
+
+
+//--------------
+// util colors
+//
+$bevel-color-light: rgba(white, 0.1);
+$bevel-color-dark: rgba(0, 0, 0, 1);
+$bevel-light-border: 1px solid $bevel-color-light;
+$bevel-dark-border: 1px solid $bevel-color-dark;
+
+
+//---------------
+// type colors
+//
+$light-text-color: white;
+$light-text-shadow: 0 -1px black;
+
+$body-text-color: $light-text-color;
+$body-text-shadow: $light-text-shadow;
+
+@mixin light-text {
+  color: $light-text-color;
+  text-shadow: $light-text-shadow;
+}
+
+
+//-------------
+// typography
+//
+@font-face {
+  font-family: 'BebasNeueRegular';
+  src: url('/fonts/bebas-neue/BebasNeue-webfont.eot');
+  src: url('/fonts/bebas-neue/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/bebas-neue/BebasNeue-webfont.woff') format('woff'),
+       url('/fonts/bebas-neue/BebasNeue-webfont.ttf') format('truetype'),
+       url('/fonts/bebas-neue/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url("http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic");
+
+$sans-serif: 'PT Sans', "Lucida Sans Unicode", "Lucida Grande", Arial, sans-serif;
+$bebas: BebasNeueRegular, $sans-serif;
+$serif: serif;
+$mono: "lucida console", mono;
+
+$body-font-family: $sans-serif;
+
+$header-font-family: $bebas;
+
+$base-font-size: 14px;
+$base-line-height: 20px;
+
+$h1-font-size: 72px;
+$h1-line-height: 84px;
+
+$h2-font-size: 36px;
+$h2-line-height: 42px;
+
+$h3-font-size: 24px;
+$h3-line-height: 30px;
+
+$h4-font-size: 16px;
+$h4-line-height: 22px;
+
+$h5-font-size: 14px;
+$h5-line-height: 20px;
+
+$h6-font-size: 12px;
+$h6-line-height: 18px;
+
+$phone-icon-unicode: "\2706";

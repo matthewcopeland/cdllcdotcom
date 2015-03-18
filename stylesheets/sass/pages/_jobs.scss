@@ -1,0 +1,37 @@
+$jobs-count: 4;
+
+.jobs-page {
+
+  h1 {
+    padding-left: $gutter;
+  }
+
+  .cd-job {
+    margin-bottom: $gutter;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%/$jobs-count;
+    padding: $gutter;
+
+    .cta {
+      margin-bottom: $gutter/2;
+
+      a { @include button; }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1023px ) {
+  .jobs-page .cd-job { width: 50%; }
+}
+
+@media only screen and (max-width: 599px ) {
+  .jobs-page {
+    h1, .cd-job {
+      display: block;
+      padding: 0;
+      width: 100%;
+    }
+  }
+}

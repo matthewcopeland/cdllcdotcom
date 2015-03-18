@@ -1,0 +1,15 @@
+// visual
+@import "base"; // base supplies brand-variables and utilities
+@import "elements"; // elements use the theme variables
+
+// the layout
+@import "partials/layout";
+
+// partials
+@import "partials/header";
+@import "partials/footer";
+
+// pages
+@import "pages/welcome_index";
+@import "pages/welcome_about";
+@import "pages/jobs";

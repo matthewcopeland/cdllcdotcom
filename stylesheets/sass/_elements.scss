@@ -1,0 +1,91 @@
+html {
+  background: url(image_path('jj_bg_01.jpg')) center center no-repeat fixed;
+  background-size: cover;
+
+  &.jj_bg_02 {
+    background-image: url(image_path('jj_bg_02.jpg'));
+  }
+}
+
+html, body {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-family: $body-font-family;
+  color: $body-text-color;
+  text-shadow: $body-text-shadow;
+}
+
+h1,h2,h3,h4,h5, h6 {
+  font-family: $header-font-family;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: $h1-font-size;
+  line-height: $h1-line-height;
+}
+
+h2 {
+  font-size: $h2-font-size;
+  line-height: $h2-line-height;
+}
+
+h3 {
+  font-size: $h3-font-size;
+  line-height: $h3-line-height;
+}
+
+h4 {
+  font-size: $h4-font-size;
+  line-height: $h4-line-height;
+}
+
+h5 {
+  font-size: $h5-font-size;
+  line-height: $h5-line-height;
+}
+
+h6 {
+  font-size: $h6-font-size;
+  line-height: $h6-line-height;
+}
+
+
+//----------
+// links
+//
+$link-color: $maroon;
+$link-hover-color: lighten($link-color, 10);
+
+a {
+  transition: color 0.2s;
+  cursor: pointer;
+  &, &:visited { color: $link-color; }
+  &:hover { color: $link-hover-color; }
+}
+
+
+//----------
+// buttons
+//
+@mixin button {
+  display: inline-block;
+  cursor: pointer;
+  padding: 8px 14px;
+  text-align: center;
+  @include light-text;
+  border-radius: $border-radius;
+  border: 2px solid darken($maroon, 15);
+  background: rgba(0,0,0, 0.4);
+  text-transform: uppercase;
+
+  @media only screen and (max-width: 480px) {
+    width: 100%;
+    display: block;
+  }//@media
+}//@mixin
+
+button {
+  @include button;
+}
+

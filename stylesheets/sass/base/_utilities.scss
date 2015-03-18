@@ -1,0 +1,26 @@
+@function image-path($img) {
+  @return "/images/#{$img}";
+}
+
+@mixin clearfix( $pseudo:"after" ) {
+  &:#{ $pseudo } {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 1px;
+    clear: both;
+    position: relative;
+  } // &:pseudo
+} // @mixin clearfix
+
+@mixin bevel( $direction ) {
+  @if $direction == "vertical" {
+    &:not(:first-of-type) { border-top: $bevel-light-border; }
+    &:not(:last-of-type) { border-bottom: $bevel-dark-border; }
+  }
+  @else if $direction == "horizontal" {
+    &:first-of-type { border-left: 1px solid transparent; }
+    &:not(:first-of-type) { border-left: $bevel-light-border; }
+    &:not(:last-of-type) { border-right: $bevel-dark-border; }
+  }
+} // @mixin bevel

@@ -1,0 +1,23 @@
+footer {
+  padding: $gutter;
+  border-top: $bevel-light-border;
+  text-align: center;
+
+  .phone:before {
+    content: $phone-icon-unicode;
+    font-size: 1.5em;
+    vertical-align: middle;
+    margin-right: .25em;
+  }
+
+  > *, li {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: $gutter;
+  }
+
+  a {
+    &, &:visited { color: rgba(white, 0.8); }
+    &:hover { color: white; }
+  }
+}

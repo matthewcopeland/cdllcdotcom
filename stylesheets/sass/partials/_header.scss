@@ -1,0 +1,46 @@
+$nav-menu-bg: rgba(0,0,0, 0.8);
+$header-padding: $gutter/2;
+$logo-size: $touch-size;
+
+#main-header {
+  padding: $header-padding 0;
+  @include clearfix;
+}
+
+#logo {
+  float: left;
+
+  img { height: $logo-size; }
+}
+
+#main-nav {
+  position: relative;
+  float: right;
+  text-align: right;
+
+  a {
+    display: block;
+    color: white;
+
+    &:hover { color: $maroon; }
+
+    &[target=_blank] {
+      $size: 1em;
+      padding-right: $size;
+      background: url( image-path('arrow-up-right.svg')) right center no-repeat;
+      background-size: auto $size*0.8;
+    }
+  }
+}
+
+.nav-menu li {
+  display: inline-block;
+  padding: $gutter/2;
+}
+
+@media only screen and (max-width: 599px ) {
+  #logo, #main-nav {
+    float: none;
+    text-align: center;
+  }
+}
